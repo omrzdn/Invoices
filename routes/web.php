@@ -21,10 +21,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Route::resource('invoices', 'App\Http\Controllers\InvoicesController');
+
+Route::resource('sections', 'App\Http\Controllers\SectionsController');
+
+Route::resource('products', 'App\Http\Controllers\ProductsController');
 
 Route::get('/{page}', 'App\Http\Controllers\AdminController@index');

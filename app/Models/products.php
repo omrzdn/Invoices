@@ -13,6 +13,6 @@ class products extends Model
 
     public function section()
     {
-        return $this->belongsTo('app\Models\sections');
+        return $this->belongsTo('App\Models\sections');
     }
 }
